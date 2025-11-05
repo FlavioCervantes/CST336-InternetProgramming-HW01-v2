@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- 
+          This is the head section. 
+          It includes optional information about the web page (author, date, etc)
+          It must include the charater set and the title
+        -->
+          <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style>
+          </style>
+          <title>PowerShell</title>
+          <link href="css/styles.css" rel="stylesheet" >
+
+          
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Adding OPENSANS for layout -->'
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+    </head>
+    <body>
+        <header>
+            <h1>PowerShell</h1>
+        </header>
+        <hr>
+        <nav>       
+
+<!--             /******* Navigation Links ********/ -->
+            <a href="main.html">Home</a> |
+            <a href="PowerShell.html">PowerShell</a> |
+            <a href="MonitoringSoftware.html">Monitoring Software</a> |
+            <a href="Linux.html">Linux</a> |
+            </nav>
+        
+            <br><br>
+         <div class="content-center">
+            <figure>
+                <img src="img/excel-meme.jpg"  width="300">
+            </figure>
+
+            <div style="text-align: center; max-width: 600px; line-height: 1.6; padding: 20px;">
+                <h2>About PowerShell</h2>
+                
+                <p>PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and the associated scripting language.</p>
+                
+                <p>It is built on the .NET framework and is designed to help IT professionals control and automate the administration of Windows operating systems and applications. It supports Object-oriented programming, pipelines, remote management, and a wide range of cmdlets for various administrative tasks.</p>
+                
+                <p>PowerShell is widely used for system administration, configuration management, and automation of repetitive tasks in Windows environments. Common uses include managing cloud services, DevOps tasks, collecting logs, exporting reports, combining data from multiple sources, and automating routine system maintenance.</p>
+                
+                <p>You can use PowerShell for vulnerability remediation scripts, disabling processes at certain times or after a quota is met, application deployments that involve multiple steps, and error checking/self-healing logic. The self-healing feature is mainly used to check for errors after running certain tasks, and if an error is found, it will attempt to fix the issue automatically.</p>
+                
+                <p>One can learn PowerShell through training and hands-on experience in the field.</p>
+           
+
+                    <p> Sources:    <br>
+                    <p><a href="https://www.geeksforgeeks.org/techtips/windows-powershell-tutorial/" target="_blank">PowerShell Introduction, Features and Uses - GeeksforGeeks</a></p>
+            <!------------------------------ CPU Performance Widget Simulator ------------------------>
+  <div class="cpu-widget">
+    <div class="cpu-label">CPU Usage</div>
+    <div class="cpu-bar">
+      <div class="cpu-fill"></div>
+    </div>
+    <div class="cpu-percent">0%</div>
+  </div>
+
+  <!---------------------------- This is where the CPU simulation logic resides ------------------------>
+  <script>
+    const fill = document.querySelector('.cpu-fill');
+    const percentText = document.querySelector('.cpu-percent');
+
+    // Fake CPU simulation
+    function getRandomCPUUsage() {
+      // generate fluctuating "CPU usage" between 97% and 3%
+      return Math.floor(Math.random() * 97) + 3;
+    }
+
+    function updateCPUWidget() {
+      const usage = getRandomCPUUsage();
+      fill.style.width = usage + '%';
+      percentText.textContent = usage + '%';
+    }
+
+    // Update widget every 1000ms ( 1 second)
+    setInterval(updateCPUWidget, 1000);
+
+    // Initialize immediately
+    updateCPUWidget();
+  </script>
+
+
+        </main>
+   
+        
+        <footer>
+             <!-- Your last name and year here in ALL assignments -->
+              <hr> 
+              CST336-40-2254 - Internet Programming. &copy; 2025 Cervantes <br />
+              <strong>Disclaimer:</strong> This website is for academic purposes only. <br />
+        </footer>
+        
+    </body>
+
+</html>
